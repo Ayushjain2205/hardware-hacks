@@ -6,6 +6,7 @@ import ReactFlow, {
   applyEdgeChanges,
   applyNodeChanges,
 } from "react-flow-renderer";
+import { Link } from "react-router-dom";
 
 const nodeTypes = {
   selectorNode: ColorSelectorNode,
@@ -152,9 +153,11 @@ function Flow() {
         fitView
       />
       <div className="flex justify-center">
-        <button className="btn btn-accent self-center">
-          <i class="fa-regular fa-bookmark"></i> &nbsp;Save automation
-        </button>
+        <Link to="/run">
+          <button className="btn btn-accent self-center">
+            <i class="fa-regular fa-bookmark"></i> &nbsp;Save automation
+          </button>
+        </Link>
       </div>
     </div>
   );

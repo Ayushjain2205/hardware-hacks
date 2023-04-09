@@ -5,6 +5,7 @@ import "./App.css";
 import Landing from "./pages/Landing";
 import Config from "./pages/Config";
 import Automation from "./pages/Automation";
+import Run from "./pages/Run";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/config" element={<Config />} />
         <Route path="/automation" element={<Automation />} />
+        <Route path="/run" element={<Run />} />
       </Routes>
     </div>
   );

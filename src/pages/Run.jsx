@@ -3,7 +3,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import Sheet from "react-modal-sheet";
 import { Link } from "react-router-dom";
 
-const Config = () => {
+const Run = () => {
   const [isOpen, setOpen] = useState(false);
   return (
     <div>
@@ -19,7 +19,7 @@ const Config = () => {
         <Player
           autoplay
           loop
-          src="https://assets10.lottiefiles.com/packages/lf20_joborrUseU.json"
+          src="https://assets10.lottiefiles.com/packages/lf20_rahz1qzu.json"
           style={{ width: "100%" }}
         ></Player>
         <button
@@ -44,18 +44,15 @@ const Config = () => {
                 <Player
                   autoplay
                   loop
-                  src="https://assets10.lottiefiles.com/packages/lf20_V6qqsk.json"
+                  src="https://assets4.lottiefiles.com/packages/lf20_s2lryxtd.json"
                   style={{ width: "90%" }}
                 ></Player>
-                <Link className="self-center mb-32" to="/automation">
-                  <button className="btn btn-wide btn-accent mt-8 self-center">
-                    Configure Automation
-                  </button>
-                </Link>
+                <span className="p-2 mb-8 text-center font-bold italic">
+                  Automation successful!
+                </span>
               </div>
             </Sheet.Content>
           </Sheet.Container>
-
           <Sheet.Backdrop />
         </Sheet>
       </div>
@@ -63,4 +60,4 @@ const Config = () => {
   );
 };
 
-export default Config;
+export default Run;
